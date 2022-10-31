@@ -2,7 +2,7 @@
 
 .login-D {
     width: 50vw;
-    height: 50vh;
+    height: 100vh;
 }
 
 .login-E {
@@ -13,17 +13,14 @@
 .box {
     border-radius: 8px;
     background: white;
-    padding: 20px;
+    padding: 50px 50px;
     position: absolute;
-    justify-items: center;
-    width: 35vw;
-    height: 35vh;
+    width: 25vw;
+    height: 50vh;
     left: 10vw;
+    top: 20vh;
 }
 
-.text-login {
-    align-items: center;
-}
 
 .text-login-email {
     display: flex;
@@ -32,10 +29,11 @@
     justify-items: center;
     box-sizing: border-box;
     margin: 10px 0px;
-
+    text-transform: uppercase;
+    transform: 0.5s;
 }
 
-.text-login-email>input{
+.text-login-email>input {
     border: none;
     outline: none;
     width: 90%;
@@ -55,7 +53,7 @@
     margin: 10px 0px;
 }
 
-.text-login-senha>input{
+.text-login-senha>input {
     border: none;
     outline: none;
     width: 90%;
@@ -67,6 +65,10 @@
     font-size: 12px;
 }
 
+input:active{
+    transition: ;
+}
+
 
 .titulos-1-E {
     text-align: center;
@@ -74,26 +76,37 @@
     justify-items: center;
     font-family: 'Poppins';
     font-size: 20px;
-    
 
 }
 
-.btn{
+.btn {
     position: absolute;
     border: none;
     width: 180px;
     height: 35px;
-    left: 35%;
+    left: 9vw;
     top: 80%;
     font-family: 'Poppins';
     font-size: 16px;
     background: #407BFF;
     color: white;
     border-radius: 8px;
-    
+    cursor:pointer; 
+    transition: background-color 0.2s;
+}
+
+.btn:hover{
+    background-color:  #00E78D;;
+}
+
+.btn:active{
+    color: #ecf1ef;
+    background-color: #00ff4c;
 }
 
 .login-main {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     align-items: center;
 }
@@ -102,7 +115,8 @@
     position: absolute;
     align-items: center;
     width: 35vw;
-    height: 85%;
+    height: 85vh;
+    top: 10%;
 }
 
 .titulos-l-D {
@@ -117,15 +131,9 @@
     color: white;
 }
 
-.text-login-email>label{
-    font-family: 'Poppins'; 
-}
 
-.text-login-senha>label{
-    font-family: 'Poppins'; 
-}
 
-.box-color{
+.box-color {
     position: absolute;
     width: 100vw;
     height: 40%;
@@ -134,7 +142,7 @@
     background: #00647D;
 }
 
-.box-color-top{
+.box-color-top {
     position: absolute;
     width: 100vw;
     height: 65%;
